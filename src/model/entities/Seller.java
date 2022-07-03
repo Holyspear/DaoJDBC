@@ -68,6 +68,10 @@ public class Seller implements Serializable {
 	public void setBaseSalary(double baseSalary) {
 		this.baseSalary = baseSalary;
 	}
+	
+	public void setDepartment(Department departmentObj) {
+		this.department = departmentObj;
+	}
 
 	@Override
 	public int hashCode() {

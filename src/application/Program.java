@@ -16,9 +16,14 @@ public class Program {
 		System.out.println(departmentObj);
 
 		Seller sellerObj = new Seller(21, "Bob", "bob@gmail.com", new Date(), 3000.00, departmentObj);
-
-		SellerDao selleDao = DaoFactory.createSellerDao();
-
+		
 		System.out.println(sellerObj);
+
+		SellerDao sellerDao = DaoFactory.createSellerDao();
+		
+		Seller sellerFinded = sellerDao.findById(4);
+		
+		System.out.println(sellerFinded);
+
 	}
 }
